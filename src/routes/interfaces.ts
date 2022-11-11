@@ -3,5 +3,6 @@ import { FC } from "react";
 export type IRoutes = {
     exact?: boolean;
     path: string;
-    component: FC;
+    component: FC<any>;
+    routes?: IRoutes[]
 }
